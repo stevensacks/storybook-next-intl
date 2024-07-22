@@ -1,29 +1,34 @@
 {
-  "name": "storybook-addon-kit",
-  "version": "0.0.0",
-  "description": "everything you need to build a Storybook addon",
+  "name": "storybook-next-intl",
+  "version": "1.0.0",
+  "description": "Add next-intl support to Storybook",
   "keywords": [
-    "storybook-addons"
+    "storybook-addons",
+    "storybook-i18n",
+    "next",
+    "next-intl",
+    "i18n",
+    "localization",
+    "internationalization"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-kit"
+    "url": "https://github.com/stevensacks/storybook-next-intl"
   },
+  "author": "Steven Sacks",
   "type": "module",
   "license": "MIT",
-  "author": "package-author",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
     },
     "./preview": {
       "types": "./dist/index.d.ts",
       "import": "./dist/preview.js",
-      "require": "./dist/preview.cjs"
+      "require": "./dist/preview.js"
     },
-    "./preset": "./dist/preset.cjs",
     "./manager": "./dist/manager.js",
     "./package.json": "./package.json"
   },
@@ -34,50 +39,59 @@
     "*.d.ts"
   ],
   "scripts": {
-    "postinstall": "node scripts/welcome.js",
+    "clean": "rimraf ./dist",
+    "prebuild": "npm run clean",
     "build": "tsup",
     "build:watch": "npm run build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "run-p build:watch \"storybook --quiet\"",
+    "start": "run-p build:watch 'storybook --quiet'",
     "prerelease": "zx scripts/prepublish-checks.js",
     "release": "npm run build && auto shipit",
     "eject-ts": "zx scripts/eject-typescript.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "dependencies": {
+    "@storybook/test": "^8.0.10",
+    "storybook-i18n": "^3.0.1"
+  },
   "devDependencies": {
-    "@storybook/addon-essentials": "8.0.0",
-    "@storybook/addon-interactions": "8.0.0",
-    "@storybook/addon-links": "8.0.0",
-    "@storybook/blocks": "8.0.0",
-    "@storybook/components": "8.0.0",
-    "@storybook/core-events": "8.0.0",
-    "@storybook/manager": "8.0.0",
-    "@storybook/manager-api": "8.0.0",
-    "@storybook/preview": "8.0.0",
-    "@storybook/preview-api": "8.0.0",
-    "@storybook/react": "8.0.0",
-    "@storybook/react-vite": "8.0.0",
-    "@storybook/test": "8.0.0",
-    "@storybook/theming": "8.0.0",
-    "@storybook/types": "8.0.0",
+    "@storybook/addon-essentials": "^8.0.10",
+    "@storybook/addon-interactions": "^8.0.10",
+    "@storybook/addon-links": "^8.0.10",
+    "@storybook/blocks": "^8.0.10",
+    "@storybook/components": "^8.0.10",
+    "@storybook/core-events": "^8.0.10",
+    "@storybook/manager": "^8.0.10",
+    "@storybook/manager-api": "^8.0.10",
+    "@storybook/preview": "^8.0.10",
+    "@storybook/preview-api": "^8.0.10",
+    "@storybook/react": "^8.0.10",
+    "@storybook/react-vite": "^8.0.10",
+    "@storybook/theming": "^8.0.10",
+    "@storybook/types": "^8.0.10",
     "@types/node": "^18.15.0",
-    "@types/react": "^18.2.65",
-    "@types/react-dom": "^18.2.21",
+    "@types/react": "18.3.2",
+    "@types/react-dom": "18.3.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "auto": "^11.1.1",
+    "auto": "11.1.6",
     "boxen": "^7.1.1",
-    "dedent": "^1.5.1",
+    "dedent": "1.5.3",
+    "next-intl": "^3.17.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.2.5",
     "prompts": "^2.4.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "8.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "rimraf": "5.0.7",
+    "storybook": "^8.0.10",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.2",
-    "vite": "^5.1.6",
+    "typescript": "5.4.5",
+    "vite": "^5.1.2",
     "zx": "^7.2.3"
+  },
+  "peerDependencies": {
+    "next-intl": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
@@ -91,16 +105,14 @@
     ],
     "previewEntries": [
       "src/preview.ts"
-    ],
-    "nodeEntries": [
-      "src/preset.ts"
     ]
   },
   "storybook": {
-    "displayName": "Addon Kit",
+    "displayName": "Storybook next-intl addon",
     "supportedFrameworks": [
-      "supported-frameworks"
+      "next"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
-  }
+  },
+  "packageManager": "pnpm@8.1.0+sha1.09ebf306075e96037432071992bb00340c263d85"
 }
