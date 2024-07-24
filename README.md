@@ -33,7 +33,7 @@ Insert this addon into your addons array:
 ---
 
 ### nextIntl.ts
-Create a file in your `.storybook` folder called `nextIntl.ts` (or whatever you like). 
+Create a file in your `.storybook` folder called `next-intl.ts` (or whatever you like). 
 
 In this file, copy and paste the below code and make whatever modifications you need (paths to messages files, etc.).
 ```typescript
@@ -62,7 +62,7 @@ In your `preview.ts`, you need to add the `locales` and `locale` to `initialGlob
 `locale` is what you want the default locale to be.
 
 ```typescript
-import nextIntl from './nextIntl';
+import nextIntl from './next-intl';
 
 const preview: Preview = {
     initialGlobals: {
@@ -84,7 +84,7 @@ export default preview;
 You can also use full locale strings as keys. It depends on your next-intl configuration.
 
 ```typescript
-import nextIntl from './nextIntl';
+import nextIntl from './next-intl';
 
 const preview: Preview = {
     initialGlobals: {
@@ -111,7 +111,7 @@ This is useful if you want to include an emoji flag or some other string to the 
 
 For example:
 ```typescript
-import nextIntl from './nextIntl';
+import nextIntl from './next-intl';
 
 const preview: Preview = {
     initialGlobals: {
@@ -119,7 +119,7 @@ const preview: Preview = {
         locales: {
             en: {icon: '🇺🇸', title: 'English', right: 'EN'},
             fr: {icon: '🇫🇷', title: 'Français', right: 'FR'},
-            ja: {icon: '🇯🇵', title: '日本語', right: 'JP'},
+            ja: {icon: '🇯🇵', title: '日本語', right: 'JA'},
         },
     },
     parameters: {
@@ -132,7 +132,7 @@ export default preview;
 
 Or something like this:
 ```typescript
-import nextIntl from './nextIntl';
+import nextIntl from './next-intl';
 
 const preview: Preview = {
     initialGlobals: {
@@ -141,7 +141,7 @@ const preview: Preview = {
             en_US: {title: 'English', right: 'US'},
             en_GB: {title: 'English', right: 'GB'},
             fr_FR: {title: 'Français', right: 'FR'},
-            ja_JP: {title: '日本語', right: 'JP'},
+            ja_JP: {title: '日本語', right: 'JA'},
         },
     },
     parameters: {
