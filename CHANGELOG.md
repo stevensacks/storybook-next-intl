@@ -1,3 +1,15 @@
+# v1.0.7 (Tue Jul 30 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat: change to storybook 8.2 initialGlobals ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v1.0.5 (Mon Jul 29 2024)
 
 #### ⚠️ Pushed to `main`
