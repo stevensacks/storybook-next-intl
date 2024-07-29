@@ -1,3 +1,15 @@
+# v1.0.5 (Mon Jul 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: remove console logs ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v1.0.3 (Wed Jul 24 2024)
 
 #### ⚠️ Pushed to `main`
