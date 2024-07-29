@@ -3,7 +3,7 @@
 Easy next-intl Storybook integration.
 
 Required Peer Dependencies:
-* storybook - `^8.0.0`
+* storybook - `^8.2.0`
 * next-intl - `^3.0.0`
 
 This Storybook addon assumes your project is already set up with [next-intl](https://next-intl-docs.vercel.app/), and that it is properly configured and working.
@@ -55,7 +55,7 @@ export default nextIntl;
 ---
 
 ### preview.ts
-In your `preview.ts`, you need to add the `locales` and `locale` to `initialGlobals` (or `globals` if you're not using the latest version of storybook), as well as adding `nextIntl` that you exported from the above file to parameters.
+In your `preview.ts`, you need to add the `locales` and `locale` to `initialGlobals`, as well as adding `nextIntl` that you exported from the above file to parameters.
 
 `locales` is an object where the keys are the "ids" of the locales/languages and the values are the names you want to display in the dropdown.
 
