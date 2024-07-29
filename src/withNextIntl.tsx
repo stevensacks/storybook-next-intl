@@ -29,10 +29,6 @@ parameters: {
     const currentLocale = locale || defaultLocale;
     const currentMessages = messages[currentLocale] || {};
 
-    console.log('-'.repeat(50));
-    console.log({currentMessages, locale, currentLocale});
-    console.log('-'.repeat(50));
-
     return (
         <IntlProvider messages={currentMessages} locale={currentLocale}>
             {StoryFn(context) as ReactNode | null}
