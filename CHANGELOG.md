@@ -1,3 +1,15 @@
+# v1.1.2 (Thu Aug 15 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: move storybook test to devDeps, peer next-intl ^3 ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v1.0.7 (Tue Jul 30 2024)
 
 #### ⚠️ Pushed to `main`
