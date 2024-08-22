@@ -1,3 +1,15 @@
+# v1.1.3 (Thu Aug 22 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat: add support for optional provider props ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v1.1.2 (Thu Aug 15 2024)
 
 #### ⚠️ Pushed to `main`
