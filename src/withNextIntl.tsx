@@ -17,20 +17,33 @@ export const withNextIntl = (
     } = context;
 
     if (nextIntl === undefined) {
-        console.error(`The 'nextIntl' parameter is missing in 'parameters' configuration of preview.js. Define the 'i18n' parameter as follows:
-parameters: {
-    nextIntl,
-}, 
-`);
+        console.error(
+            `The 'nextIntl' parameter is missing in 'parameters' configuration of preview.js. Check the README for instructions.`,
+        );
         return StoryFn(context);
     }
 
-    const {defaultLocale, messages} = nextIntl || {};
+    const {
+        defaultLocale,
+        messagesByLocale,
+        formats,
+        onError,
+        defaultTranslationValues,
+        getMessageFallback,
+    } = nextIntl || {};
+
     const currentLocale = locale || defaultLocale;
-    const currentMessages = messages[currentLocale] || {};
+    const currentMessages = messagesByLocale[currentLocale] || {};
 
     return (
-        <IntlProvider messages={currentMessages} locale={currentLocale}>
+        <IntlProvider
+            defaultTranslationValues={defaultTranslationValues}
+            formats={formats}
+            getMessageFallback={getMessageFallback}
+            locale={currentLocale}
+            messages={currentMessages}
+            onError={onError}
+        >
             {StoryFn(context) as ReactNode | null}
         </IntlProvider>
     );

@@ -32,26 +32,36 @@ Insert this addon into your addons array:
 ```
 ---
 
-### nextIntl.ts
+### next-intl.ts
 Create a file in your `.storybook` folder called `next-intl.ts` (or whatever you like). 
 
 In this file, copy and paste the below code and make whatever modifications you need (paths to messages files, etc.).
 ```typescript
-import en from '../src/messages/en';
-import fr from '../src/messages/fr';
-import ja from '../src/messages/ja';
+import en from '../src/messages/en.json';
+import fr from '../src/messages/fr.json';
+import ja from '../src/messages/ja.json';
 
-const messages: Record<string, any> = {en, fr, ja};
+const messagesByLocale: Record<string, any> = {en, fr, ja};
 
 const nextIntl = {
   defaultLocale: 'en',
-  messages,
+  messagesByLocale,
 };
 
 export default nextIntl;
-
 ```
 
+You can also include options such as [formats](https://next-intl-docs.vercel.app/docs/usage/configuration#formats), [defaultTranslationValues](https://next-intl-docs.vercel.app/docs/usage/configuration#default-translation-values), [onError and getMessageFallback](https://next-intl-docs.vercel.app/docs/usage/configuration#error-handling).
+```typescript
+const nextIntl = {
+  defaultLocale: 'en',
+  messagesByLocale,
+  formats: {/* your settings */},
+  defaultTranslationValues: {/* your settings */},
+  onError: (error) => console.error(error),
+  getMessageFallback: ({namespace, key}) => `${namespace}.${key}`,
+};
+```
 ---
 
 ### preview.ts
