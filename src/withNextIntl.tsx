@@ -5,7 +5,7 @@ import type {
     Renderer,
     StoryContext,
 } from '@storybook/types';
-import {IntlProvider} from 'next-intl';
+import {NextIntlClientProvider} from 'next-intl';
 
 export const withNextIntl = (
     StoryFn: StoryFunction<Renderer>,
@@ -36,7 +36,7 @@ export const withNextIntl = (
     const currentMessages = messagesByLocale[currentLocale] || {};
 
     return (
-        <IntlProvider
+        <NextIntlClientProvider
             defaultTranslationValues={defaultTranslationValues}
             formats={formats}
             getMessageFallback={getMessageFallback}
@@ -45,6 +45,6 @@ export const withNextIntl = (
             onError={onError}
         >
             {StoryFn(context) as ReactNode | null}
-        </IntlProvider>
+        </NextIntlClientProvider>
     );
 };
