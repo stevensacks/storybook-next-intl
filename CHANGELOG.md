@@ -1,3 +1,16 @@
+# v1.1.5 (Mon Oct 14 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat: switch to NextIntlClientProvider ([@stevensacks](https://github.com/stevensacks))
+- fix: dev test [ci skip] ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v1.1.3 (Thu Aug 22 2024)
 
 #### ⚠️ Pushed to `main`
