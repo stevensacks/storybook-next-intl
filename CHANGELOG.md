@@ -1,3 +1,15 @@
+# v1.1.7 (Wed Nov 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- chore: upgrade deps ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v1.1.5 (Mon Oct 14 2024)
 
 #### ⚠️ Pushed to `main`
