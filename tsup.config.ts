@@ -91,7 +91,7 @@ export default defineConfig(async (options) => {
       format: ["esm"],
       target: BROWSER_TARGET,
       platform: "browser",
-      external: globalPreviewPackages,
+      external: [...globalPreviewPackages, "react"],
     });
   }
 
