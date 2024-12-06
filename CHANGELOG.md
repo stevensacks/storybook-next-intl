@@ -1,3 +1,16 @@
+# v1.2.3 (Fri Dec 06 2024)
+
+#### 🐛 Bug Fix
+
+- fix: Remove React from peerDependencies [#7](https://github.com/stevensacks/storybook-next-intl/pull/7) ([@CHC383](https://github.com/CHC383))
+- fix: Remove React from the Bundle [#6](https://github.com/stevensacks/storybook-next-intl/pull/6) ([@CHC383](https://github.com/CHC383))
+
+#### Authors: 1
+
+- Henry Cai ([@CHC383](https://github.com/CHC383))
+
+---
+
 # v1.1.7 (Wed Nov 20 2024)
 
 #### ⚠️ Pushed to `main`
