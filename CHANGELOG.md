@@ -1,3 +1,15 @@
+# v1.2.5 (Sat Feb 15 2025)
+
+#### ⚠️ Pushed to `main`
+
+- fix: spread nextIntl props to support more options in the provider ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v1.2.3 (Fri Dec 06 2024)
 
 #### 🐛 Bug Fix
