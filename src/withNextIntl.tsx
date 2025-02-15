@@ -23,26 +23,16 @@ export const withNextIntl = (
         return StoryFn(context);
     }
 
-    const {
-        defaultLocale,
-        messagesByLocale,
-        formats,
-        onError,
-        defaultTranslationValues,
-        getMessageFallback,
-    } = nextIntl || {};
+    const {defaultLocale, messagesByLocale} = nextIntl || {};
 
     const currentLocale = locale || defaultLocale;
     const currentMessages = messagesByLocale[currentLocale] || {};
 
     return (
         <NextIntlClientProvider
-            defaultTranslationValues={defaultTranslationValues}
-            formats={formats}
-            getMessageFallback={getMessageFallback}
+            {...nextIntl}
             locale={currentLocale}
             messages={currentMessages}
-            onError={onError}
         >
             {StoryFn(context) as ReactNode | null}
         </NextIntlClientProvider>
