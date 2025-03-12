@@ -91,7 +91,7 @@
     "zx": "7.2.3"
   },
   "peerDependencies": {
-    "next-intl": "^3"
+    "next-intl": "^3 || ^4"
   },
   "publishConfig": {
     "access": "public"
