@@ -1,3 +1,15 @@
+# v1.2.6 (Thu Mar 13 2025)
+
+#### 🐛 Bug Fix
+
+- feat: Support `next-intl@4` [#9](https://github.com/stevensacks/storybook-next-intl/pull/9) ([@amannn](https://github.com/amannn))
+
+#### Authors: 1
+
+- Jan Amann ([@amannn](https://github.com/amannn))
+
+---
+
 # v1.2.5 (Sat Feb 15 2025)
 
 #### ⚠️ Pushed to `main`
