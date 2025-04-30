@@ -52,24 +52,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@storybook/react-vite": "^9.0.0-0",
     "storybook-i18n": "3.1.1"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^8.5.6",
-    "@storybook/addon-interactions": "^8.5.6",
-    "@storybook/addon-links": "^8.5.6",
-    "@storybook/blocks": "^8.5.6",
-    "@storybook/components": "^8.5.6",
-    "@storybook/core-events": "^8.5.6",
-    "@storybook/manager": "^8.5.6",
-    "@storybook/manager-api": "^8.5.6",
-    "@storybook/preview": "^8.5.6",
-    "@storybook/preview-api": "^8.5.6",
-    "@storybook/react": "^8.5.6",
-    "@storybook/react-vite": "^8.5.6",
-    "@storybook/test": "^8.5.6",
-    "@storybook/theming": "^8.5.6",
-    "@storybook/types": "^8.5.6",
     "@types/node": "22.13.4",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
@@ -84,14 +70,15 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "rimraf": "5.0.7",
-    "storybook": "^8.5.6",
+    "storybook": ">=9.0.0-0 <10.0.0-0",
     "tsup": "8.3.6",
     "typescript": "5.7.3",
     "vite": "5.4.11",
     "zx": "7.2.3"
   },
   "peerDependencies": {
-    "next-intl": "^3 || ^4"
+    "next-intl": "^3 || ^4",
+    "storybook": "^9.0.0"
   },
   "publishConfig": {
     "access": "public"
