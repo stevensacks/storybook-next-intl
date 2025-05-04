@@ -1,3 +1,15 @@
+# v1.2.7 (Sun May 04 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat: add storybook 9 support ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v1.2.6 (Thu Mar 13 2025)
 
 #### 🐛 Bug Fix
