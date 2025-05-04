@@ -3,8 +3,10 @@
 Easy next-intl Storybook integration.
 
 Required Peer Dependencies:
-* storybook - `^8.2.0`
-* next-intl - `^3.0.0`
+* 2.x - storybook - `^9.0.0`
+* 1.x - storybook - `^8.2.0`
+
+* next-intl - `^3.0.0 || ^4.0.0`
 
 This Storybook addon assumes your project is already set up with [next-intl](https://next-intl-docs.vercel.app/), and that it is properly configured and working.
 

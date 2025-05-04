@@ -1,10 +1,10 @@
 import React, {ReactNode} from 'react';
-import {useGlobals} from '@storybook/preview-api';
+import {useGlobals} from 'storybook/preview-api';
 import type {
     PartialStoryFn as StoryFunction,
     Renderer,
     StoryContext,
-} from '@storybook/types';
+} from 'storybook/internal/types';
 import {NextIntlClientProvider} from 'next-intl';
 
 export const withNextIntl = (
