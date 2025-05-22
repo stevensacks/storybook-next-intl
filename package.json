@@ -100,6 +100,5 @@
       "next"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
-  },
-  "packageManager": "pnpm@8.1.0+sha1.09ebf306075e96037432071992bb00340c263d85"
+  }
 }
