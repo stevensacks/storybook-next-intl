@@ -97,7 +97,9 @@ export default defineConfig(async (options) => {
             format: ['esm', 'cjs'],
             target: BROWSER_TARGET,
             platform: 'browser',
-            external: globalPreviewPackages,
+            // Exclude React from the bundle
+            // https://github.com/stevensacks/storybook-next-intl/issues/5
+            external: [...globalPreviewPackages, 'react'],
         });
     }
 
