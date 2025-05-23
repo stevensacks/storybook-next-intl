@@ -1,6 +1,6 @@
 {
   "name": "storybook-next-intl",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Add next-intl support to Storybook",
   "keywords": [
     "storybook-addons",
