@@ -1,3 +1,15 @@
+# v2.0.6 (Fri May 23 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat: upgrade storybook-i18n ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v2.0.5 (Fri May 23 2025)
 
 #### 🐛 Bug Fix
