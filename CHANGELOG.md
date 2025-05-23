@@ -1,3 +1,15 @@
+# v2.0.3 (Fri May 23 2025)
+
+#### 🐛 Bug Fix
+
+- fix(tsup): exclude react from tsup bundle [#12](https://github.com/stevensacks/storybook-next-intl/pull/12) ([@CHC383](https://github.com/CHC383))
+
+#### Authors: 1
+
+- Henry Cai ([@CHC383](https://github.com/CHC383))
+
+---
+
 # v1.2.7 (Sun May 04 2025)
 
 #### ⚠️ Pushed to `main`
