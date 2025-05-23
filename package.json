@@ -52,7 +52,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "storybook-i18n": "^4.0.2"
+    "storybook-i18n": "^4.0.3"
   },
   "devDependencies": {
     "@storybook/react-vite": "^9.0.0-rc.4",
