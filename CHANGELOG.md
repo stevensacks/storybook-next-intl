@@ -1,3 +1,15 @@
+# v2.0.5 (Fri May 23 2025)
+
+#### 🐛 Bug Fix
+
+- Update dev dependencies [#13](https://github.com/stevensacks/storybook-next-intl/pull/13) ([@CHC383](https://github.com/CHC383))
+
+#### Authors: 1
+
+- Henry Cai ([@CHC383](https://github.com/CHC383))
+
+---
+
 # v2.0.3 (Fri May 23 2025)
 
 #### 🐛 Bug Fix
