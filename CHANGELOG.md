@@ -1,3 +1,15 @@
+# v2.0.9 (Fri Jun 06 2025)
+
+#### ⚠️ Pushed to `main`
+
+- fix: storybook-i18n updated for globe icon ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v2.0.7 (Thu May 29 2025)
 
 #### ⚠️ Pushed to `main`
