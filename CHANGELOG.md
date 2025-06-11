@@ -1,3 +1,16 @@
+# v2.0.11 (Wed Jun 11 2025)
+
+#### ⚠️ Pushed to `main`
+
+- fix: set storybook peerDep to workspace ([@stevensacks](https://github.com/stevensacks))
+- fix: add react as peerDep and to externals to prevent multiple versions of react being installed ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v2.0.9 (Fri Jun 06 2025)
 
 #### ⚠️ Pushed to `main`
