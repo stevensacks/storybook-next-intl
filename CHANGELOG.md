@@ -1,3 +1,15 @@
+# v2.0.13 (Fri Jun 13 2025)
+
+#### ⚠️ Pushed to `main`
+
+- fix: storybook 9 peerDep ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v2.0.11 (Wed Jun 11 2025)
 
 #### ⚠️ Pushed to `main`
