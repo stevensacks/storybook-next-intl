@@ -3,6 +3,7 @@
 Easy next-intl Storybook integration.
 
 Required Peer Dependencies:
+* 10.x - storybook - `^10.0.0`
 * 2.x - storybook - `^9.0.0`
 * 1.x - storybook - `^8.2.0`
 
