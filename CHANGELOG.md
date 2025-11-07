@@ -1,3 +1,15 @@
+# v2.0.14 (Fri Nov 07 2025)
+
+#### 🐛 Bug Fix
+
+- Feat/storybook 10 [#17](https://github.com/stevensacks/storybook-next-intl/pull/17) ([@stevensacks](https://github.com/stevensacks))
+
+#### Authors: 1
+
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v2.0.13 (Fri Jun 13 2025)
 
 #### ⚠️ Pushed to `main`
