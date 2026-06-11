@@ -1,3 +1,15 @@
+# v10.1.2 (Thu Jun 11 2026)
+
+#### 🐛 Bug Fix
+
+- Build package root export [#18](https://github.com/stevensacks/storybook-next-intl/pull/18) (stevensacks@gmail.com [@yanziwei](https://github.com/yanziwei))
+
+#### Authors: 1
+
+- [@yanziwei](https://github.com/yanziwei)
+
+---
+
 # v10.0.2 (Tue Mar 10 2026)
 
 #### ⚠️ Pushed to `main`
