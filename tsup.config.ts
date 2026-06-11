@@ -16,7 +16,12 @@ export default defineConfig(async () => {
         .default;
 
     const {
-        bundler: {managerEntries = [], previewEntries = [], nodeEntries = []},
+        bundler: {
+            exportEntries = [],
+            managerEntries = [],
+            previewEntries = [],
+            nodeEntries = [],
+        },
     } = packageJson;
 
     const commonConfig: Options = {
@@ -36,6 +41,21 @@ export default defineConfig(async () => {
     };
 
     const configs: Options[] = [];
+
+    /*
+     export entries are package-root exports that users or Storybook resolve
+     directly from the addon package. They need declarations generated because
+     package.json points the root export at dist/index.js and dist/index.d.ts.
+    */
+    if (exportEntries.length) {
+        configs.push({
+            ...commonConfig,
+            entry: exportEntries,
+            platform: 'browser',
+            target: 'esnext',
+            dts: true,
+        });
+    }
 
     /*
      manager entries are entries meant to be loaded into the manager UI
