@@ -1,3 +1,15 @@
+# v10.1.3 (Mon Jun 22 2026)
+
+#### 🐛 Bug Fix
+
+- fix: add missing metadata fields to package.json [#19](https://github.com/stevensacks/storybook-next-intl/pull/19) ([@BWM0223](https://github.com/BWM0223))
+
+#### Authors: 1
+
+- [@BWM0223](https://github.com/BWM0223)
+
+---
+
 # v10.1.2 (Thu Jun 11 2026)
 
 #### 🐛 Bug Fix
