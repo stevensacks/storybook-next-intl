@@ -6,7 +6,7 @@ const i18nDecorators = i18n.decorators || [];
 
 const preview: ProjectAnnotations<Renderer> = {
     ...i18n,
-    // @ts-ignore
+    // @ts-expect-error i18nDecorators may be a single non-iterable decorator, not an array
     decorators: [...i18nDecorators, withNextIntl],
 };
 
