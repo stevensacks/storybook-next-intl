@@ -1,7 +1,9 @@
 import {definePreview} from '@storybook/react-vite';
+import nextIntlAddon from '../src';
 import nextIntl from './nextIntl';
 
 export default definePreview({
+    addons: [nextIntlAddon()],
     initialGlobals: {
         locale: 'en',
         locales: {
